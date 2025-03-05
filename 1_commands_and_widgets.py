@@ -41,8 +41,8 @@ st.write("---")
 # my_list = [10,50,409] # Python list
 # my_dict = {'Number':[1,2,3], 'Color': ['Blue', 'Yellow', 'Green']} # python dictionary
 
-##### We will use pandas and numpy to generate a DataFrame. 
-##### For now, think of a DataFrame as a table with columns, rows and data.
+# #### We will use pandas and numpy to generate a DataFrame. 
+# #### For now, think of a DataFrame as a table with columns, rows and data.
 # import numpy as np
 # import pandas as pd 
 # np.random.seed(1)
@@ -80,7 +80,7 @@ st.write("---")
 #                         "Col2":np.random.randint(low=25,high=80,size=10)
 #                         })
 
-#### and will plot the data
+# ### and will plot the data
 # import matplotlib.pyplot as plt
 # import seaborn as sns  
 # st.write("* Plot with Matplotlib/Seaborn") # we create a figure and plot the data
@@ -193,13 +193,13 @@ st.write("---")
 #### You will define the content on each variable with the command "with:"
 #### this example prints a list in the first column and displays a widget in the second column
 
-# col1, col2 = st.columns(2)
-# with col1:
-#     st.write([1,2,3])
-# with col2:
-#     option = st.selectbox(label='Pick one:', options=[1,2,3,'A'], key="3")
+col1, col2 = st.columns(2)
+with col1:
+    st.write([1,2,3])
+with col2:
+    option = st.selectbox(label='Pick one:', options=[1,2,3,'A'], key="3")
 
-# st.write(f"* I see you selected {option}, and its type is {type(option)}")
+st.write(f"* I see you selected {option}, and its type is {type(option)}")
 
 
 ################################################################################
